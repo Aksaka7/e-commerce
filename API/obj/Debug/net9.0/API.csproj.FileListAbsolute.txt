@@ -152,3 +152,4 @@ C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\API\bin\Debug\net9.0\Microsoft.Ext
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\API\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\API\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\API\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\API\obj\Debug\net9.0\API.sourcelink.json

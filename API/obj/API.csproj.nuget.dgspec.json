@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ak24k\\OneDrive\\Masaüstü\\e-commerce\\Api\\API.csproj": {}
+    "C:\\Users\\Mehmet\\Desktop\\e-commerce\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ak24k\\OneDrive\\Masaüstü\\e-commerce\\Api\\API.csproj": {
+    "C:\\Users\\Mehmet\\Desktop\\e-commerce\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ak24k\\OneDrive\\Masaüstü\\e-commerce\\Api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Mehmet\\Desktop\\e-commerce\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Ak24k\\OneDrive\\Masaüstü\\e-commerce\\Api\\API.csproj",
-        "packagesPath": "C:\\Users\\Ak24k\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ak24k\\OneDrive\\Masaüstü\\e-commerce\\Api\\obj\\",
+        "projectPath": "C:\\Users\\Mehmet\\Desktop\\e-commerce\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Mehmet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mehmet\\Desktop\\e-commerce\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Visual Studio Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Ak24k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mehmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

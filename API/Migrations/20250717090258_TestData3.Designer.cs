@@ -2,6 +2,7 @@
 using API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20250717090258_TestData3")]
+    partial class TestData3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.6");
@@ -84,16 +87,6 @@ namespace API.Migrations
                             IsActive = true,
                             Name = "OnePlus 11 Pro",
                             Price = 55000m,
-                            Stock = 100
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Description = "Fresh purple apple",
-                            ImageUrl = "https://picsum.photos/id/5/200/300",
-                            IsActive = true,
-                            Name = "Xiaomi 13 Pro",
-                            Price = 50000m,
                             Stock = 100
                         });
                 });

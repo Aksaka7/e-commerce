@@ -19,9 +19,11 @@ public class DataContext(DbContextOptions options) : DbContext(options)
                 new Product {
                     Id = 2, Name = "Samsung Galaxy S23 Ultra", Price = 80000, Description = "Fresh green apple", ImageUrl = "https://picsum.photos/id/2/200/300", IsActive= true, Stock = 100,},
                 new Product {
-                    Id = 3, Name = "Google Pixel 8 Pro", Price = 60000, Description = "Fresh yellow apple", ImageUrl = "https://picsum.photos/id/3/200/300", IsActive= true, Stock = 100,},
+                    Id = 3, Name = "Google Pixel 8 Pro", Price = 60000, Description = "Fresh yellow apple", ImageUrl = "https://picsum.photos/id/3/200/300", IsActive= false, Stock = 100,},
                 new Product {
                     Id = 4, Name = "OnePlus 11 Pro", Price = 55000, Description = "Fresh orange apple", ImageUrl = "https://picsum.photos/id/4/200/300", IsActive= true, Stock = 100,},
+                new Product {
+                    Id = 5, Name = "Xiaomi 13 Pro", Price = 50000, Description = "Fresh purple apple", ImageUrl = "https://picsum.photos/id/5/200/300", IsActive= true, Stock = 100,},
             }
         );
     }

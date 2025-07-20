@@ -1,53 +1,70 @@
-const products = [
-  {  name: 'Product 1', price: 100 },
-  {  name: 'Product 2', price: 200 },
-  {  name: 'Product 3', price: 300 },
-  {  name: 'Product 4', price: 400 },
-  {  name: 'Product 5', price: 500 },
-  {  name: 'Product 6', price: 600 },
-]
+import { useEffect, useState } from "react";
+import { IProduct } from "./model/IProduct";
 
 function App() {
+  const [products, setProducts] = useState<IProduct[]>([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5291/api/products")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+
+  function addProduct() {
+    setProducts([
+      ...products,
+      {
+        id: Date.now(),
+        name: `Ürün ${products.length + 1}`,
+        price: (products.length + 1) * 100,
+        isActive: true,
+      },
+    ]);
+  }
 
   return (
     <>
-    <Header />
-    <ProductList />
+      <Header products={products} />
+      <ProductList products={products} addProduct={addProduct} />
     </>
-      
-    
-  )
+  );
 }
 
-function Header(){
-  return(
-    <h1>Header </h1>
-  )
+function Header(props: any) {
+  return <>{newFunction(props)}</>;
 }
 
-function ProductList(){
-  return(
+function newFunction(props: any) {
+  return <h1>Toplam Ürün sayısı: {props.products.length} </h1>;
+}
+
+function ProductList(props: any) {
+  return (
     <div>
       <h2>Product List</h2>
-      <Product product={products[0]}/>
-      <Product product={products[1]}/>
-      <Product product={products[2]}/>
-      <Product product={products[3]}/>
-      <Product product={products[4]}/>
-      <Product product={products[5]}/>
+      {props.products.map((p: IProduct) => (
+        <Product key={p.id} product={p} />
+      ))}
 
-      
+      <button onClick={props.addProduct}> Ürünü Ekle</button>
     </div>
-    
-  )
+  );
 }
 
-function Product(props: any){
-  return(
-    <h3>{props.product.name} --- {props.product.price}</h3>
-  )
+function Product(props: any) {
+  return (
+    <>
+      {props.product.isActive ? (
+        <div>
+          <h3>{props.product.name}</h3>
+          <p>Price: {props.product.price} TL</p>
+        </div>
+      ) : (
+        <p>Bu ürün Aktif Değil.</p>
+      )}
+    </>
+  );
 }
+/* Yukardaki Listede Oyuncu Aktif degil ise ekrana müşteri aktif degildir  yazacak*/
 
-
-
-export default App
+export default App;

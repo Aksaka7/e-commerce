@@ -12,7 +12,7 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlite(connectionString);
 });
 
-builder.Services.AddCors(); /*Buraya bunu ekledik => Neden Diye açıkla ?*/
+builder.Services.AddCors();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -32,11 +32,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseStaticFiles();
+
 app.UseCors(opt =>
 {
     opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
-    // opt.AllowAnyOrigin(); // Bu şekilde de kullanılabilir, ancak güvenlik açısından önerilmez.
-    // Yani, sadece belirli bir kaynaktan gelen istekleri kabul et.
 });
 
 app.UseAuthorization();

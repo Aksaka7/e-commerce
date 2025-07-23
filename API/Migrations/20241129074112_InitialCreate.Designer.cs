@@ -10,14 +10,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250624160440_TestData1")]
-    partial class TestData1
+    [Migration("20241129074112_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "9.0.6");
+            modelBuilder.HasAnnotation("ProductVersion", "9.0.0");
 
             modelBuilder.Entity("API.Entity.Product", b =>
                 {
@@ -52,41 +52,71 @@ namespace API.Migrations
                         new
                         {
                             Id = 1,
-                            Description = "Fresh red apple",
-                            ImageUrl = "https://picsum.photos/id/1/200/300",
+                            Description = "Apple Watch Series",
+                            ImageUrl = "1.jpg",
                             IsActive = true,
-                            Name = "IPhone 15 Pro",
+                            Name = "Apple Watch Series 1",
                             Price = 70000m,
                             Stock = 100
                         },
                         new
                         {
                             Id = 2,
-                            Description = "Fresh green apple",
-                            ImageUrl = "https://picsum.photos/id/2/200/300",
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "2.jpg",
                             IsActive = true,
-                            Name = "Samsung Galaxy S23 Ultra",
+                            Name = "Apple Watch Series 2",
                             Price = 80000m,
                             Stock = 100
                         },
                         new
                         {
                             Id = 3,
-                            Description = "Fresh yellow apple",
-                            ImageUrl = "https://picsum.photos/id/3/200/300",
-                            IsActive = true,
-                            Name = "Google Pixel 8 Pro",
-                            Price = 60000m,
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "3.jpg",
+                            IsActive = false,
+                            Name = "Apple Watch Series 3",
+                            Price = 90000m,
                             Stock = 100
                         },
                         new
                         {
                             Id = 4,
-                            Description = "Fresh orange apple",
-                            ImageUrl = "https://picsum.photos/id/4/200/300",
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "4.jpg",
                             IsActive = true,
-                            Name = "OnePlus 11 Pro",
-                            Price = 55000m,
+                            Name = "Xiaomi Redmi Watch 1",
+                            Price = 100000m,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "5.jpg",
+                            IsActive = true,
+                            Name = "Xiaomi Redmi Watch 2",
+                            Price = 100000m,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "6.jpg",
+                            IsActive = true,
+                            Name = "Xiaomi Redmi Watch 3",
+                            Price = 100000m,
+                            Stock = 100
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Telefon açıklaması",
+                            ImageUrl = "7.jpg",
+                            IsActive = true,
+                            Name = "Xiaomi Redmi Watch 4",
+                            Price = 100000m,
                             Stock = 100
                         });
                 });

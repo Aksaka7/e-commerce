@@ -2,12 +2,11 @@ using API.Data;
 using API.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 
 namespace API.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("/api/[controller]")]    // api/products
 public class ProductsController : ControllerBase
 {
     private readonly DataContext _context;
@@ -15,8 +14,6 @@ public class ProductsController : ControllerBase
     {
         _context = context;
     }
-    
-
 
 
     [HttpGet]
@@ -26,6 +23,7 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
+    // api/products/1
     [HttpGet("{id}")]
     public async Task<IActionResult> GetProduct(int? id)
     {
@@ -34,12 +32,14 @@ public class ProductsController : ControllerBase
             return NotFound();
         }
 
-        var product = await _context.Products.FindAsync(id); 
+        var product = await _context.Products.FindAsync(id);
+
         if (product == null)
         {
             return NotFound();
         }
+
         return Ok(product);
-        
     }
+
 }

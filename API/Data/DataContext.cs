@@ -12,19 +12,18 @@ public class DataContext(DbContextOptions options) : DbContext(options)
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.Entity<Product>().HasData(
-            new List<Product>
-            {
-                new Product {
-                    Id = 1, Name = "IPhone 15 Pro", Price = 70000, Description = "Fresh red apple", ImageUrl = "https://picsum.photos/id/1/200/300", IsActive= true, Stock = 100,},
-                new Product {
-                    Id = 2, Name = "Samsung Galaxy S23 Ultra", Price = 80000, Description = "Fresh green apple", ImageUrl = "https://picsum.photos/id/2/200/300", IsActive= true, Stock = 100,},
-                new Product {
-                    Id = 3, Name = "Google Pixel 8 Pro", Price = 60000, Description = "Fresh yellow apple", ImageUrl = "https://picsum.photos/id/3/200/300", IsActive= false, Stock = 100,},
-                new Product {
-                    Id = 4, Name = "OnePlus 11 Pro", Price = 55000, Description = "Fresh orange apple", ImageUrl = "https://picsum.photos/id/4/200/300", IsActive= true, Stock = 100,},
-                new Product {
-                    Id = 5, Name = "Xiaomi 13 Pro", Price = 50000, Description = "Fresh purple apple", ImageUrl = "https://picsum.photos/id/5/200/300", IsActive= true, Stock = 100,},
+            new List<Product> {
+                new Product { Id=1, Name="Apple Watch Series 1", Description="Apple Watch Series", ImageUrl="1.jpg", Price=70000, IsActive=true, Stock=100  },
+                new Product { Id=2, Name="Apple Watch Series 2", Description="Telefon açıklaması", ImageUrl="2.jpg", Price=80000, IsActive=true, Stock=100  },
+                new Product { Id=3, Name="Apple Watch Series 3", Description="Telefon açıklaması", ImageUrl="3.jpg", Price=90000, IsActive=false, Stock=100  },
+                new Product { Id=4, Name="Xiaomi Redmi Watch 1", Description="Telefon açıklaması", ImageUrl="4.jpg", Price=100000, IsActive=true, Stock=100  },
+                new Product { Id=5, Name="Xiaomi Redmi Watch 2", Description="Telefon açıklaması", ImageUrl="5.jpg", Price=100000, IsActive=true, Stock=100  },
+                new Product { Id=6, Name="Xiaomi Redmi Watch 3", Description="Telefon açıklaması", ImageUrl="6.jpg", Price=100000, IsActive=true, Stock=100  },
+                new Product { Id=7, Name="Xiaomi Redmi Watch 4", Description="Telefon açıklaması", ImageUrl="7.jpg", Price=100000, IsActive=true, Stock=100  }
             }
         );
+
+
     }
+
 }

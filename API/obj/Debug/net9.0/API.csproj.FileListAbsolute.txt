@@ -291,3 +291,11 @@ C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\obj\Debug\net9.0\refint\API.dl
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\obj\Debug\net9.0\API.pdb
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\obj\Debug\net9.0\ref\API.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Logging.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Options.dll
+C:\Users\Ak24k\OneDrive\Masaüstü\e-commerce\Api\bin\Debug\net9.0\Microsoft.Extensions.Primitives.dll

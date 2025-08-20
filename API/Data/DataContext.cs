@@ -27,3 +27,5 @@ public class DataContext(DbContextOptions options) : DbContext(options)
     }
 
 }
+
+/* Removed custom ModelBuilder class to avoid conflict with EF Core's ModelBuilder */

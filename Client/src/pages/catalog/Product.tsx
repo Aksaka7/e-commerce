@@ -1,5 +1,5 @@
 import { AddShoppingCart, Search } from "@mui/icons-material";
-import { IProduct } from "../model/IProduct";
+import { IProduct } from "../../model/IProduct";
 import {
   Button,
   Card,
@@ -8,6 +8,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
+import { Link } from "react-router";
 
 interface Props {
   product: IProduct;
@@ -42,7 +43,10 @@ export default function Product({ product }: Props) {
         >
           Add to cart
         </Button>
-        <Button
+        <Button /*Buraya yazdıgım Butona tıkladıgımda direk olarak ilgili ürünün 
+        Product Details sayfasına gidecek */
+          component={Link}
+          to={`/catalog/${product.id}`}
           variant="outlined"
           size="small"
           startIcon={<Search />}
